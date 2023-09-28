@@ -1,0 +1,51 @@
+https://i.imgur.com/Rtx6orp.jpg<html>
+
+<head>
+  <title>Title of the document</title>
+</head>
+
+<body>
+  <h1>The content of the document......</h1>
+  <div class="sidebar">
+    <a class="active" href="#HOme">Home</a>
+    <a href="#references">References</a>
+    <a href="#webgame">WebGame</a>
+    <a href="#schoolprojects">SchoolProjects</a>
+    <a href="#previouswork">PreviousWork</a>
+    <!--Literally whole page here-->
+    <div class="content">
+      <p> Welcome to Michel Rodriguez's webpage! I made this to showcase my work up to now.
+      </p>
+    </div>
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br>
+      <input type="submit" value="Submit">
+    </form>
+
+    <!--a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.reddit.com%2Fr%2Fsilenthill%2Fcomments%2F9oqwh5%2Fsilent_hill_1_door_painting%2F&psig=AOvVaw1XcqQkrKn16g3NhXKO8Z2c&ust=1645483188899000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJinodusj_YCFQAAAAAdAAAAABA0"-->
+    <audio controls autoplay loop>
+      <source src="horse.mp3" type="audio/mpeg">
+    </audio><br><br>
+    <audio id="myAudio" controls loop>
+      <source src="horse.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+      const audio = document.getElementById("myAudio");
+      // Set the starting time in seconds; for example, 30 seconds
+      audio.currentTime = 30;
+      // Autoplay audio
+      audio.play().catch(err => {
+        // Autoplay was prevented. Handle it.
+      });
+    </script>
+    <div id="player"></div>
+
+    <img src="https://i.imgur.com/Rtx6orp.jpg" alt="Silent Hill Preview" id="GamePicture">
+
+</body>
+
+</html>
